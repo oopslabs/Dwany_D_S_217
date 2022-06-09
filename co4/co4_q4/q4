@@ -1,1 +1,36 @@
 
+package dwanyjava;
+import java.util.*;
+
+class negative extends Exception
+{
+	negative(String mg)
+	{
+		super(mg);
+	}
+	
+}
+
+public class co4_q4 {
+public static void main(String args[])
+{
+	Scanner ob=new Scanner(System.in);
+	int limit,i,sum=0,avg;
+	int arr[]=new int[10];
+	System.out.println("enter the limit");
+	limit=ob.nextInt();
+	for(i=0;i<limit;i++)
+	{
+		arr[i]=ob.nextInt();
+		
+	}
+	for(i=0;i<limit;i++)
+	{
+		sum=sum+arr[i];
+		
+	}
+	System.out.println("average of sum of n numbers is"+sum/limit);
+	
+}
+
+}
