@@ -1,21 +1,33 @@
-package oopslab;
-
-import java.util.HashMap;
-import java.util.Map;
-
-public class q17_co4 {
-	public static void main(String args[]) {
-	Map<Integer,String> mp1=new HashMap<Integer,String>();
-	mp1.put(1,"farhana");
-	mp1.put(2, "dwany");
-	mp1.put(3, "akash");
-	System.out.println(mp1);
-	mp1.remove(1);
-	for(Map.Entry<Integer,String> me:mp1.entrySet())
-	{
-		mp1.entrySet();
-	System.out.println(me.getValue());
-	System.out.println(me.getKey());
-	}
-	}
-}
+package study;
+import java.util.*;
+public class hashmap {
+			public static void main(String args[]) {
+				HashMap<Integer,String> hm=new HashMap<>();
+				hm.put(1,"dwany");
+				hm.put(2,"ansiya");
+				hm.put(3, "anusree");
+				hm.put(4, "akhila");
+				System.out.println("the values are "+hm);
+				hm.put(4, "arun");
+				System.out.println("after updating"+hm);
+				
+				hm.remove(1);
+				System.out.println("after removing"+hm);
+				
+				System.out.println("size : "+hm.size());
+				System.out.println("after accessing 2nd value "+hm.get(2));
+				
+				for(String i:hm.values())
+				{
+					System.out.println(i);
+				}
+				System.out.println("**************");
+				for(HashMap.Entry<Integer,String> me:hm.entrySet())
+				{
+					hm.entrySet();
+				System.out.println(me.getValue());
+				System.out.println(me.getKey());
+				}
+				}
+	    }
+	
